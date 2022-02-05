@@ -10,13 +10,13 @@
 
         <style>
             body{
-                background-color: blue;
+                background-image: url("Login.png");
             }
 
             .form-control{
                 background-color: #021F4B;
                 Border:0px;
-                border-bottom: 5px solid white;
+                border-bottom: 2px solid white;
             }
 
             #Login{
@@ -25,7 +25,14 @@
                 left:8.3%;
                 width: 83%;
             }
-        
+            
+            #Text{
+                position: fixed;
+                font-family: 'Secular One', sans-serif;
+                color: white;
+                top:410px;
+                left:13.155px;  
+            }
             @media screen and (min-width: 768px) {
             
                 #Login{
@@ -35,12 +42,22 @@
                 width: 65%;
             }
 
+            @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
             }
         </style>
 
     </head>
 
     <body>
+
+        <div id="Text">
+            <h2>
+                <b>
+                Welcome to Khub 2.0!
+                </b>    
+            </h2>
+        </div>
         <div id="Login">
             <form action="/action_page.php">
                 <div class="form-group">    

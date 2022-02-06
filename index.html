@@ -31,10 +31,21 @@
                 font-family: 'Secular One', sans-serif;
                 color: white;
                 top:410px;
-                left:13.155px;  
+                left:13.155px;
             }
-            @media screen and (min-width: 768px) {
+            .btn-primary{
+                background-color: #4C3B71;
+                border-color: #4C3B71;
+                margin-left:36.61%;
+                width:80px;
+            }
             
+            @media screen and (min-width: 361px) {
+                
+                body{
+                background-image: url("Wide.jpg");
+            }
+
                 #Login{
                 position: fixed;
                 top:59%;
@@ -42,23 +53,58 @@
                 width: 65%;
             }
 
-            @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+            #Text{
+                position: absolute;
+                font-family: 'Secular One', sans-serif;
+                color: white;
+                top: -30%;
+                left: 16.56%;
+            }
+                .btn-primary{
+                background-color: #4C3B71;
+                border-color: #4C3B71;
+                margin-left:41.98%;
+                width:80px;
+            }
+           
+            }
+            @media screen and (min-width: 769px) {
+                
+                body{
+                background-image: url("Widest.jpg");
+            }
+
+                #Login{
+                position: fixed;
+                top:59%;
+                left:470.255px;
+                width: 499.19px;
+                }
+
+                #Text{
+                position: absolute;
+                font-family: 'Secular One', sans-serif;
+                color: white;
+                top: -30%;
+                left: 16.56%;
 
             }
+            @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
         </style>
 
     </head>
 
     <body>
 
-        <div id="Text">
+        
+        <div id="Login">
+            <div id="Text">
             <h2>
                 <b>
                 Welcome to Khub 2.0!
                 </b>    
             </h2>
         </div>
-        <div id="Login">
             <form action="/action_page.php">
                 <div class="form-group">    
                   <input type="email" class="form-control" placeholder="Email" id="email">
@@ -66,7 +112,7 @@
                 <div class="form-group">
                   <input type="password" class="form-control" placeholder="Password" id="pwd">
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Sign in</button>
               </form>
         </div>
     </body>

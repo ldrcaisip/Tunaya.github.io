@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head> 
+    <title>Compsci Quiz</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Merienda&family=Iceland&display=swap" rel="stylesheet">  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+        <style>
+        header{
+         color:#021F4B ;
+         background-image:url(https://wallpaperaccess.com/full/7732348.png);
+         background-size:222%;
+         background-position:center;
+         background-repeat:no-repeat;
+         font-family: 'Iceland', cursive;
+           }
+        header h1{
+         font-size: 90px;
+         color: #4C3B71
+             }
+        footer{
+          color: #115268;
+        background-image:url(https://wallpapercave.com/wp/wp2562152.jpg);
+         background-size:420%;
+         background-position:center;
+         background-repeat:no-repeat;
+         font-family: 'Iceland', cursive;
+        }     
+             .form-inline{
+                position: absolute;
+                right:0px;
+            }
+            
+            .navbar-brand{
+              width: 50px;
+            }
+            .navbar-dark .navbar-toggler-icon {
+                background-image: url("cog.png");
+            }
+
+            .nav-item{
+              position:relative;
+              z-index: 5;
+              width:50px;
+            }
+            .nav-item:hover{
+            background-color: #0090c0;
+            }
+
+            .nav-item:active{
+            background-color: #0d627e;
+            }
+
+            .navbar-toggler{
+                background: #021F4B;
+                width:50px;
+                height:50px;
+                z-index: 1;
+                border-width: 0px;     
+                transform-origin: 54%; 
+                border-radius: 100px;        
+            }
+
+            .navbar-toggler:hover{
+                animation: cog 1s 1;
+            }
+            
+            img{
+            width: 100%;
+            }
+
+            .navbar{
+                background:  #021F4B;
+            }
+
+            .exp{
+              transition: width 1s;
+              width: 50px;
+            }
+
+                .exp:hover+ .hide {
+              color: ivory;
+              background-color: #0d627e;
+              width:100px;
+              opacity: 1;
+            }
+
+            .exp:hover+.hide2{
+              color: ivory;
+              background-color: #0d627e;
+              width:100px;
+              opacity: 1;
+            }
+
+            .exp:hover+.hide3{
+              color: ivory;
+              background-color: #0d627e;
+              width:100px;
+              opacity: 1;
+            }
+          
+            .hide{
+              transition: width .5s;
+              width: 0px;
+              color:#021F4B;
+              opacity: 0;
+              position: relative;
+              z-index: 1;
+            }
+
+            .hide2{
+              transition: width .5s;
+              width: 0px;
+              color:#021F4B;
+              opacity: 0;
+              position: relative;
+              z-index: 1;
+            }
+
+            .hide3{
+              transition: width .5s;
+              width: 0px;
+              color:#021F4B;
+              opacity: 0;
+              position: relative;
+              z-index: 1;
+            }
+            
+            
+           
+            @keyframes cog {
+             100% {transform: rotate(360deg);}
+            }
+
+
+            @media only screen and (max-width: 760px) {
+              .exp:hover+ .hide{
+            color: ivory;
+            background-color: #0d627e;
+            width:100px;
+            position:absolute;
+            left:65px;
+            height: 66px;
+              }
+
+              .exp:hover+ .hide2{
+            color: ivory;
+            background-color: #0d627e;
+            width:100px;
+            position:absolute;
+            left:65px;
+            height:66px;
+            top:134px;
+              }
+
+              .exp:hover+ .hide3{
+            color: ivory;
+            background-color: #0d627e;
+            width:100px;
+            position:absolute;
+            left:65px;
+            height: 66px;
+            top:200px;
+              }
+
+              .hide{
+                 transition: width 1s;
+                width: 0px;
+                color:#021F4B;
+                position:absolute;
+                left:65px;
+                }
+
+                .hide2{
+                 transition: width 1s;
+                width: 0px;
+                color:#021F4B;
+                position:absolute;
+                left:65px;
+                }
+
+                .hide3{
+                 transition: width 1s;
+                width: 0px;
+                color:#021F4B;
+                position:absolute;
+                left:65px;
+                }
+
+         
+        }
+        </style>
+
+    </head>
+
+    <body>
+        <header class="jumbotron text-center" style="margin-bottom:0">
+         <h1>Compsci Quiz</h1>
+         <h2>The Trials Of Your Hard Work!</h2>
+         </header>
+        
+                <nav class="navbar navbar-expand-md  navbar-dark">
+            <a class="navbar-brand" href="#"><img src="Logo.png" alt="Logo"></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <div class="navbar-nav">
+
+                <div class="exp">
+                <div class="nav-item">
+                  <a class="nav-link" href="Dash.html"><img src="Home.png" alt="Home"></a>
+                </div> 
+              </div>
+              <div class="hide">
+                <h2>
+                  Home
+                </h2>
+              </div>
+
+              <div class="exp">
+                <div class="nav-item">
+                  <a class="nav-link" href="Grades.html"><img src="Grades.png" alt="Grades"></a>
+                </div>
+              </div>
+              <div class="hide2">
+                <h2>
+                  Grades
+                </h2>
+              </div>
+
+                <div class="exp">
+                <div class="nav-item">
+                  <a class="nav-link" href="Author.html"><img src="Author.png" alt="Author"></a>
+                </div>
+              </div>
+              <div class="hide3">
+                <h2>
+                  Author
+                </h2>
+              </div>
+            </div>
+            </div>
+          </nav>
+          <div class="container-fluid" style="background-color:black" >
+  <div class="row">
+    <div class="col-sm-4 text-info" style="font-family: 'Iceland', cursive">
+      <h1>General Instructions:</h1>
+      <h4>Read the Instructions carefully. The quiz should be taken individually. The quiz is NOT open notes so you should review if you're not ready. There is no time limit so take your time.</h4>
+      <br>
+    </div>
+    <div class="col-sm-8 text-info" style="font-family: 'Iceland', cursive">
+      <br>
+      <br>
+      <h4>Question 1: Select All That Applies</h4>
+      <h5>Which coding language is used for web development?</h5>
+         <div class="form-check">
+         <label class="form-check-label">
+         <input type="checkbox" class="form-check-input" value="">CSS
+         </label>
+         </div>
+         <div class="form-check">
+         <label class="form-check-label">
+           <input type="checkbox" class="form-check-input" value="">C++
+         </label>
+        </div>
+        <div class="form-check">
+         <label class="form-check-label">
+         <input type="checkbox" class="form-check-input" value="">HTML
+        </label>
+        
+        </div>
+    <br>
+      
+      <h4>Question 2: Short Answer</h4>
+      <h5>What do you type in the 1st line when coding a website?</h5>
+      <div class="form-group">
+      <label for="ans2">Answer:</label>
+      <input type="text" class="form-control" id="ans2">
+     </div>
+    <br>
+     <h4>Question 3: Short Answer</h4>
+      <h5>What is Bootstrap 4's grid system?</h5>
+      <div class="form-group">
+      <label for="ans3">Answer:</label>
+      <input type="text" class="form-control" id="ans3">
+      <br>
+      <br>
+      
+        <h4>Question 4: True Or False</h4>
+      <h5>Bootstrap 4's grid system has 12 columns across the page.</h5>
+      <div class="form-group">
+      <label for="ans4">Answer:</label>
+      <input type="text" class="form-control" id="ans4">
+     </div>
+     <br>
+     <h4>Question 5: Select All That Applies</h4>
+      <h5>Which are the classes for text color in Bootstrap 4</h5>
+         <div class="form-check">
+         <label class="form-check-label">
+         <input type="checkbox" class="form-check-input" value="">text-white
+         </label>
+         </div>
+         <div class="form-check">
+         <label class="form-check-label">
+           <input type="checkbox" class="form-check-input" value="">text-warning
+         </label>
+        </div>
+        <div class="form-check">
+         <label class="form-check-label">
+         <input type="checkbox" class="form-check-input" value="">text-success
+        </label>
+        
+        </div>
+    <br>
+    <a href=# role="button" class="btn btn-outline-info float-right btn-lg" style="margin-bottom:20px">Next Page</a>
+     </div>
+    </div>
+  </div>
+
+</div>
+   <footer>
+        <div class="container-fluid p-5 text-white text-left"  >
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h5>Sign up for our weekly newsletter and other goodies from the crew (pssst! There's a podcast underway)</h5>
+                        
+                        <form>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Email address (rest assured, confidential)</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                          </div>
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                    <div class="col-sm-3 footer-column">
+                        <h5>More information about us (stalkers not allowed)</h5>
+                            <a href="" class="footer-li">About Us</a><br>
+                            <a href="" class="footer-li">Mission and Vision</a><br>
+                            <a href="" class="footer-li">Have Suggestions?</a><br>
+                            <a href="" class="footer-li">Authors</a><br>
+                            <a href="" class="footer-li">Featured Articles</a>
+                    </div>
+                    <div class="col-sm-3 footer-column">
+                        <h5>Follow us on social media for updates for this project!</h5>
+                            <a href="" class="footer-li">Facebook</a><br>
+                            <a href="" class="footer-li">Instagram</a><br>
+                            <a href="" class="footer-li">Twitter</a><br>
+                            <a href="" class="footer-li">YouTube</a><br>
+                            <a href="" class="footer-li">Reddit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-dark text-white p-2">
+        Copyright &#169; MMXXII Pisayers' Periodical
+        </div>
+         
+    </footer>
+
+        
+     
+    </body>
+</html>
+

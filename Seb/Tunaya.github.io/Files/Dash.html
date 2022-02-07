@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang=en>
+
+	<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Amatic+SC&family=Averia+Sans+Libre:wght@300&family=Racing+Sans+One&family=Sriracha&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<title> Khub 2.0 Dashboard </title>
+
+<style>
+	
+	* {box-sizing: border-box}
+	
+	body{ 
+	  position: relative;
+	  background-color: #4C3B71;
+	  background-image: url('https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/469890/3b3825ccf060dd685d7c0d1d405290ecc38239e1.jpg');
+    }
+	
+	.article {
+	  float: left;
+	  margin-top: 120px;
+	  margin-bottom: 100px;
+	  margin-left: 100px;
+	  width: 35%;
+	  background-color: blue;
+	  height: 300px; 
+	}
+	
+	.section {
+	  float: left;
+	  margin-top: 250px;
+	  width: 100%;
+	  background-color: #f1f1f1;
+	  height: 200px; 
+	}
+	
+	
+	
+	footer {
+	  position: absolute;
+	  background-color: red;
+	  bottom: 0;
+	  width: 100%;
+	  height: 50px;
+	}
+	
+	h3{
+		color: black;
+		font-family: 'Acme';
+		font-size: 40px;	
+		padding-top: 20px;
+		padding-left: 40px;
+		}
+	
+	.p{
+		
+		font-family: 'Acme';
+		font-size: 20px;
+		color: black;
+		padding-left: 40px;
+		text-align: left;
+		display: block;
+	}
+
+	.form-inline{
+                position: absolute;
+                right:0px;
+            }
+            
+            .navbar-brand{
+              width: 50px;
+            }
+            .navbar-dark .navbar-toggler-icon {
+                background-image: url("cog.png");
+            }
+
+            .nav-item{
+              position:relative;
+              z-index: 5;
+              width:50px;
+            }
+            .nav-item:hover{
+            background-color: #0090c0;
+            }
+
+            .nav-item:active{
+            background-color: #0d627e;
+            }
+
+            .navbar-toggler{
+                background: #021F4B;
+                width:50px;
+                height:50px;
+                z-index: 1;
+                border-width: 0px;     
+                transform-origin: 54%; 
+                border-radius: 100px;        
+            }
+
+            .navbar-toggler:hover{
+                animation: cog 1s 1;
+            }
+            
+            img{
+            width: 100%;
+            }
+
+            .navbar{
+              z-index: 1;
+                background:  #021F4B;
+            }
+
+            .exp{
+              transition: width 1s;
+              width: 50px;
+            }
+
+                .exp:hover+ .hide {
+              color: ivory;
+              background-color: #0d627e;
+              width:100px;
+              opacity: 1;
+            }
+
+            .exp:hover+.hide2{
+              color: ivory;
+              background-color: #0d627e;
+              width:100px;
+              opacity: 1;
+            }
+
+            .exp:hover+.hide3{
+              color: ivory;
+              background-color: #0d627e;
+              width:100px;
+              opacity: 1;
+            }
+          
+            .hide{
+              transition: width .5s;
+              width: 0px;
+              color:#021F4B;
+              opacity: 0;
+              position: relative;
+              z-index: 1;
+            }
+
+            .hide2{
+              transition: width .5s;
+              width: 0px;
+              color:#021F4B;
+              opacity: 0;
+              position: relative;
+              z-index: 1;
+            }
+
+            .hide3{
+              transition: width .5s;
+              width: 0px;
+              color:#021F4B;
+              opacity: 0;
+              position: relative;
+              z-index: 1;
+            }
+
+			@keyframes cog {
+             100% {transform: rotate(360deg);}
+          }
+	
+	
+	@media only screen and (max-width: 760px) {
+              .exp:hover+ .hide{
+            color: ivory;
+            background-color: #0d627e;
+            width:100px;
+            position:absolute;
+            left:65px;
+            height: 66px;
+              }
+
+              .exp:hover+ .hide2{
+            color: ivory;
+            background-color: #0d627e;
+            width:100px;
+            position:absolute;
+            left:65px;
+            height:66px;
+            top:134px;
+              }
+
+              .exp:hover+ .hide3{
+            color: ivory;
+            background-color: #0d627e;
+            width:100px;
+            position:absolute;
+            left:65px;
+            height: 66px;
+            top:200px;
+              }
+
+              .hide{
+                 transition: width 1s;
+                width: 0px;
+                color:#021F4B;
+                position:absolute;
+                left:65px;
+                }
+
+                .hide2{
+                 transition: width 1s;
+                width: 0px;
+                color:#021F4B;
+                position:absolute;
+                left:65px;
+                }
+
+                .hide3{
+                 transition: width 1s;
+                width: 0px;
+                color:#021F4B;
+                position:absolute;
+                left:65px;
+                }
+
+         
+        }
+
+	
+		
+	</style>
+	</head>
+
+		<body>
+			<nav class="navbar navbar-expand-md  navbar-dark">
+				<a class="navbar-brand" href="#"><img src="Logo.png" alt="Logo"></a>
+				<button class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				  <div class="navbar-nav">
+	
+					<div class="exp">
+					<div class="nav-item">
+					  <a class="nav-link" href="Dash.html"><img src="Home.png" alt="Home"></a>
+					</div> 
+				  </div>
+				  <div class="hide">
+					<h2>
+					  Home
+					</h2>
+				  </div>
+	
+				  <div class="exp">
+					<div class="nav-item">
+					  <a class="nav-link" href="Grades.html"><img src="Grades.png" alt="Grades"></a>
+					</div>
+				  </div>
+				  <div class="hide2">
+					<h2>
+					  Grades
+					</h2>
+				  </div>
+	
+					<div class="exp">
+					<div class="nav-item">
+					  <a class="nav-link" href="Author.html"><img src="Author.png" alt="author"></a>
+					</div>
+				  </div>
+				  <div class="hide3">
+					<h2>
+					  Author
+					</h2>
+				  </div>
+				</div>
+				</div>
+			  </nav>
+		
+	<div id="main">
+			<div class="article">
+				<div class="section">
+				<a href="bio.html"><h3> Biology </h3></a>
+				<div class="p">
+				<p> Explore different complex worlds from the human anatomy to the ecosystems around the world. </p>
+				</div>
+			</div>
+			</div>
+		
+			<div class="article" style="margin-left:250px;">
+				<div class="section">
+				<a href="cs-quizz.html"><h3> Computer Science </h3></a>
+				<div class="p">
+				<p> Hack your way through the perplexing and fascinating world of Computer Science. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
